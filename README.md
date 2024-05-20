@@ -1,21 +1,64 @@
-Configurações iniciais:
 
-1. Instale todas as dependências do projeto com o seguinte comando:
+<p align="center">
+<strong> Projeto ANBETEC - API DE USUÁRIOS</strong>
 
-> npm install #or yarn install
 
-2. Caso tenha o docker instalado utilize o seguinte comando abaixo para a criação do banco de dados postgres. Acesse o diretório raiz do projeto:
+Este é um projeto CRUD simples desenvolvido em [Node.js/Fastify]. Ele permite realizar as operações básicas de criação, leitura, atualização e exclusão de usuários em um sistema.
 
-> docker compose up -d
 
-3. Para a criação das tabelas do banco de dados utilize o seguinte comando:
+<h3 align="center">
+   <a href="https://www.linkedin.com/in/tiago-sants/">
+    <img alt="Tiago Santos" src="https://img.shields.io/badge/-Tiago Santos-000?style=flat&logo=Linkedin&logoColor=FF941A" />
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-FF941A.svg" />
+  </a>
+</h3>
 
-> npx prisma migrate deploy #or yarn prisma migrate deploy
+## Funcionalidades
 
-4. Agora, iremos realizar a inserção de algumas informações fictícias com o arquivo do seed:
+- Criação de usuários.
+- Visualização de usuários.
+- Atualização de usuários.
+- Exclusão de usuários.
 
-> npx prisma db seed #or yarn prisma db seed
 
-5. Lembre-se de criar um arquivo na raiz do projeto ".env" seguindo o arquivo de exemplo ".env-example", onde estão algumas variáveis de ambiente necessárias para a execução do projeto
+## Instalação
 
-Obs: Para todo as alterações seguir o padrão de commit´s que está no seguinte artigo: https://dev.to/vitordevsp/padronizacao-de-commit-com-commitlint-husky-e-commitizen-3g1n
+Siga estas etapas para instalar e executar o projeto:
+
+```bash
+# Repository
+git clone https://github.com/tiago-sants/anbetec-api-users.git
+
+# Install Dependencies
+$ npm install # or yarn install
+
+# Create Containers in Docker
+$ docker compose up -d
+
+# Create Containers in Docker
+$ npx prisma migrate deploy #or yarn prisma migrate deploy
+
+# Create Containers in Docker
+$ npx prisma db seed #or yarn prisma db seed
+
+# Lembre-se de criar um arquivo na raiz do projeto ".env" seguindo o arquivo de exemplo ".env-example", onde estão algumas variáveis de ambiente necessárias para a execução do projeto
+
+# Run the application
+$ npm run dev # or yarn dev
+
+```
+
+## Documentação
+
+https://localhost:{$port}/docs
+
+
+## Author
+
+😎 Tiago Santos
+
+- Github: [@tiago-sants](https://github.com/tiago-sants)
+- Linkedin: [@tiago-sants](https://linkedin.com/in/tiago-sants)
+
